@@ -1,8 +1,5 @@
-const $navbar = document.querySelector(".navbar");
+import menuBurger from "./menu_burger.js";
 
-document.addEventListener("click", (e) => {
-  // MENU -Burger
-  if (e.target.matches("#menu i") || e.target.matches(".navbar a")) {
-    $navbar.classList.toggle("hidden");
-  }
+document.addEventListener("DOMContentLoaded", (e) => {
+  menuBurger("#menu i", ".navbar a");
 });
