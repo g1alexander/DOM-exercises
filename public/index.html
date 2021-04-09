@@ -24,7 +24,9 @@
         <div
           class="h-screen bg-black flex flex-col justify-center items-center opacity-80 fixed z-40 w-full"
         >
-          <a href="#seccion1" class="link-menu">Seccion 1</a>
+          <a href="#seccion1" class="link-menu"
+            >Reloj Digital y Alarma Sonora</a
+          >
           <a href="#seccion2" class="link-menu">Seccion 2</a>
           <a href="#seccion3" class="link-menu">Seccion 3</a>
           <a href="#seccion4" class="link-menu">Seccion 4</a>
@@ -41,9 +43,30 @@
       </header>
 
       <main>
-        <!--  -->
+        <!-- Reloj Digital y Alarma Sonora -->
         <section id="seccion1" class="h-screen">
-          <h2 class="title">seccion 1</h2>
+          <h2 class="title">Reloj Digital y Alarma Sonora</h2>
+          <div id="reloj">
+            <h2 id="content-reloj" class="title"></h2>
+            <audio id="alarm" src="asset/alarma.mp3" preload="none"></audio>
+          </div>
+          <template id="templete-reloj">
+            <h2 id="content-reloj" class="title"></h2>
+          </template>
+          <div class="text-center">
+            <button id="start-reloj" class="btn btn-blue mb-4">
+              Iniciar Reloj
+            </button>
+            <button id="stop-reloj" class="btn btn-disable mb-4" disabled>
+              Detener Reloj
+            </button>
+            <button id="start-alarm" class="btn btn-blue">
+              Iniciar Alarma
+            </button>
+            <button id="stop-alarm" class="btn btn-disable">
+              Detener Alarma
+            </button>
+          </div>
         </section>
 
         <!--  -->
