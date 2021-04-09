@@ -11,68 +11,12 @@
 
 ---
 
-const $startReloj = document.getElementById("start-reloj"),
-$stopReloj = document.getElementById("stop-reloj"),
-$reloj = document.getElementById("reloj"),
-$templete = document.getElementById("templete-reloj").content;
+2. Segundo ejercicio **"Reloj digital - Alarma Sonora"**
 
-$startReloj.addEventListener("click", (e) => {
-$startReloj.setAttribute("disabled", "");
-$startReloj.classList.remove("btn-blue");
-$startReloj.classList.add("btn-disable");
+- No era necesario poner las funcione de reloj y alarma en una sola, el profe hizo dos funciones separadas para cada uno, si bien solo se puede exportar una funcion por **default** no se estrictamente necesario poner todo en una funcion
+- El profe utilizó **innerHTML** para actualizar el reloj, yo utilize **templete**, una diferencia que noté fue que gasto menos lineas de codigo
+- En la parte del audio, el profe no creo en el **HTML** la etiqueta, si no, que atraves de **JS** la creó
+- el profe puso algunas cosas que yo no, coloco un **setTimeout** para que la etiqueta audio esperara 2 seg antes de reproducirse
+- y uso una propiedad llamada **currentTime = 0** que hace que reset al audio para que vuelva a iniciar desde 0
 
-$stopReloj.removeAttribute("disabled");
-$stopReloj.classList.add("btn-red");
-$stopReloj.classList.remove("btn-disable");
-
-let set_interval = setInterval(() => {
-$templete.querySelector("h2").textContent = new Date().toLocaleTimeString();
-    let $clone = document.importNode($templete, true);
-$reloj.appendChild($clone);
-let hour = $reloj.appendChild($clone);
-let $content = document.getElementById("content-reloj");
-$reloj.replaceChild(hour, $content);
-}, 1000);
-
-$stopReloj.addEventListener("click", (e) => {
-$stopReloj.setAttribute("disabled", "");
-$stopReloj.classList.remove("btn-red");
-$stopReloj.classList.add("btn-disable");
-
-    $startReloj.removeAttribute("disabled");
-    $startReloj.classList.add("btn-blue");
-    $startReloj.classList.remove("btn-disable");
-
-    clearInterval(set_interval);
-    $reloj.querySelector("h2").setAttribute("hidden", "");
-
-});
-});
-
-const $alarm = document.getElementById("alarm"),
-$startAlarm = document.getElementById("start-alarm"),
-$stopAlarm = document.getElementById("stop-alarm");
-
-$startAlarm.addEventListener("click", (e) => {
-$startAlarm.setAttribute("disabled", "");
-$startAlarm.classList.remove("btn-blue");
-$startAlarm.classList.add("btn-disable");
-
-$stopAlarm.removeAttribute("disabled");
-$stopAlarm.classList.add("btn-red");
-$stopAlarm.classList.remove("btn-disable");
-
-$alarm.play();
-});
-
-$stopAlarm.addEventListener("click", (e) => {
-$stopAlarm.setAttribute("disabled", "");
-$stopAlarm.classList.remove("btn-red");
-$stopAlarm.classList.add("btn-disable");
-
-$startAlarm.removeAttribute("disabled");
-$startAlarm.classList.add("btn-blue");
-$startAlarm.classList.remove("btn-disable");
-
-$alarm.pause();
-});
+---
