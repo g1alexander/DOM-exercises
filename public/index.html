@@ -15,6 +15,14 @@
       html {
         scroll-behavior: smooth;
       }
+      /* @keyframes translating {
+        0%  { transform: translate(0, 240px);}
+        25% { transform: translate(240px, 0);}
+        50% { transform: translate(240px, 140px);}
+        75% { transform: translate(0, 140px);}
+        100%{ transform: translate(0, 0);}
+      }
+      span{ animation: translating 4s linear;} */
     </style>
   </head>
   <body>
@@ -27,7 +35,7 @@
           <a href="#seccion1" class="link-menu"
             >Reloj Digital y Alarma Sonora</a
           >
-          <a href="#seccion2" class="link-menu">Seccion 2</a>
+          <a href="#seccion2" class="link-menu">Eventos de teclado</a>
           <a href="#seccion3" class="link-menu">Seccion 3</a>
           <a href="#seccion4" class="link-menu">Seccion 4</a>
           <a href="#seccion5" class="link-menu">Seccion 5</a>
@@ -69,9 +77,16 @@
           </div>
         </section>
 
-        <!--  -->
+        <!-- Eventos de teclado -->
         <section id="seccion2" class="h-screen">
-          <h2 class="title">seccion 2</h2>
+          <h2 class="title">Eventos de teclado</h2>
+          <span class="flex justify-center pb-5"
+            >Presiona click en el fondo y mueve el objeto con W, A, S, D
+          </span>
+          <canvas
+            id="canvas"
+            class="bg-gray-900 container mx-auto w-full h-96"
+          ></canvas>
         </section>
 
         <!--  -->

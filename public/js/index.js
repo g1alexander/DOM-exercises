@@ -1,5 +1,6 @@
 import menuBurger from "./menu_burger.js";
 import relojAlarma from "./reloj_alarma.js";
+import { ball, events } from "./event_keydowm.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   menuBurger("#menu i", ".navbar a");
@@ -12,4 +13,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     "#stop-alarm",
     "#alarm"
   );
+
+  ball("#canvas");
+  events();
 });

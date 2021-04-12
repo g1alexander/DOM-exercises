@@ -11,7 +11,7 @@
 
 ---
 
-2. Segundo ejercicio **"Reloj digital - Alarma Sonora"**
+### 2. Segundo ejercicio **"Reloj digital - Alarma Sonora"**
 
 - No era necesario poner las funcione de reloj y alarma en una sola, el profe hizo dos funciones separadas para cada uno, si bien solo se puede exportar una funcion por **default** no se estrictamente necesario poner todo en una funcion
 - El profe utilizó **innerHTML** para actualizar el reloj, yo utilize **templete**, una diferencia que noté fue que gasto menos lineas de codigo
