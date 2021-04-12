@@ -20,3 +20,12 @@
 - y uso una propiedad llamada **currentTime = 0** que hace que reset al audio para que vuelva a iniciar desde 0
 
 ---
+
+### 3. tercer ejercicio **eventos de teclado**
+
+- en el archivo principal donde se hace las importaciones no era necesario poner los eventos del teclado, ya que, esos no necesitan un click para ejecutarlos.
+- como yo tengo los eventos del teclado, hace que consuma mas memoria (hay 3 y el profe solo utiliza 1)
+- Me falto una cosa muy importante, la colision de la pelota :)
+- puede haberme ahorrado muchos **if** usando un **switch**
+- el ejercicio el profe lo resolvio podiendo un **.style transform** (mi primer intento fue ese, pero, en vez de poner transform puse, **left, top, ...**)
+- el metodo para detectar las coliciones es **getBoundingClientRect()**
