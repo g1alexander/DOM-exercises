@@ -29,3 +29,7 @@
 - puede haberme ahorrado muchos **if** usando un **switch**
 - el ejercicio el profe lo resolvio podiendo un **.style transform** (mi primer intento fue ese, pero, en vez de poner transform puse, **left, top, ...**)
 - el metodo para detectar las coliciones es **getBoundingClientRect()**
+
+---
+
+### 4. Cuarto ejercicio - Conteo regresivo
