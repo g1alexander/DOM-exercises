@@ -662,6 +662,9 @@ video {
 	padding-top: 1.5rem;
 	padding-bottom: 1.5rem;
 }
+.pt-1 {
+	padding-top: 0.25rem;
+}
 .pb-5 {
 	padding-bottom: 1.25rem;
 }
@@ -737,4 +740,8 @@ video {
 .btn-disable {
 	--tw-bg-opacity: 1;
 	background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
+}
+.hover\:text-gray-500:hover {
+	--tw-text-opacity: 1;
+	color: rgba(107, 114, 128, var(--tw-text-opacity));
 }
