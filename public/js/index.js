@@ -3,6 +3,7 @@ import relojAlarma from "./reloj_alarma.js";
 import { ball, events } from "./event_keydowm.js";
 import countdown from "./countdown.js";
 import scrollArrow from "./scroll.js";
+import darkMode from "./dark_mode.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   menuBurger("#menu i", ".navbar a");
@@ -20,6 +21,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
   events();
 
   countdown("#countdown", "#img-countdown", new Date("Jan 01, 2022 00:00:00"));
+
+  darkMode("#dark-mode i", "#dark");
 });
 
 document.addEventListener("scroll", () => {

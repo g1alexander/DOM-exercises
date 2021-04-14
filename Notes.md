@@ -37,3 +37,12 @@
 - como solo trabajamos con un id, podia haber trabajado con **getElementById()**
 - el profe solo paso el formato del de la fecha y internamente lo paso a **new Date()**
 - algo adicional que pude haber puesto es que las horas, min y seg aparezca un **"0"** cuando el contador baje de 10. ej "09, 08 ...", se hace con: **"0" ... .slide(-2)**
+
+---
+
+### 5. Quinto ejercicio - boton de scroll
+
+- Se puede dibujar iconos con codigo ascii :)
+- **Me falto algo importante y no es a nivel del ejercicio, si no a nivel de animaciones, me falta aprender eso en css (y los frameworks css)**
+  -Nota Importante: en el evento click del boton me falto delegar el evento, hay que recordar que delegar el evento es muy importante para que el rendimiento de la pagina no se vea afectado
+  -el profe coloco el evento del scroll en el **DOMContentLoaded** no fuera de el como yo
