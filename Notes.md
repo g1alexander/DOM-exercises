@@ -33,3 +33,7 @@
 ---
 
 ### 4. Cuarto ejercicio - Conteo regresivo
+
+- como solo trabajamos con un id, podia haber trabajado con **getElementById()**
+- el profe solo paso el formato del de la fecha y internamente lo paso a **new Date()**
+- algo adicional que pude haber puesto es que las horas, min y seg aparezca un **"0"** cuando el contador baje de 10. ej "09, 08 ...", se hace con: **"0" ... .slide(-2)**
