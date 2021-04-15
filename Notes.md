@@ -46,3 +46,14 @@
 - **Me falto algo importante y no es a nivel del ejercicio, si no a nivel de animaciones, me falta aprender eso en css (y los frameworks css)**
   -Nota Importante: en el evento click del boton me falto delegar el evento, hay que recordar que delegar el evento es muy importante para que el rendimiento de la pagina no se vea afectado
   -el profe coloco el evento del scroll en el **DOMContentLoaded** no fuera de el como yo
+
+---
+
+### 6. Sexto ejercicio - dark mode
+
+- el profe hizo el cambio de tema con **data-attribute** en el HTML
+
+### 7. Septimo ejercicio - localStorage
+
+- me falto que cuando cambie el tema se guarde en localStorage (tecnicamente si lo use, pero, solo que valide si es el navegador esta light o dark)
+- Nota: cuando el localStorage esta vacio es **null**
