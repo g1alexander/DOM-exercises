@@ -57,3 +57,9 @@
 
 - me falto que cuando cambie el tema se guarde en localStorage (tecnicamente si lo use, pero, solo que valide si es el navegador esta light o dark)
 - Nota: cuando el localStorage esta vacio es **null**
+
+### 8. Octavo ejercicio - Responsive design JS
+
+- otra vez ejecute una funcion con 2 elementos en el **index.js** en vez de separarlos como lo hizo el profe
+- los codigos embebidos de HTML los paso como parametros
+- Hice el ejercicio muy bien :) (me gusto mucho la clase)
