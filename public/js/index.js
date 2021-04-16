@@ -4,6 +4,7 @@ import { ball, events } from "./event_keydowm.js";
 import countdown from "./countdown.js";
 import scrollArrow from "./scroll.js";
 import darkMode from "./dark_mode.js";
+import responsive from "./responsive.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   menuBurger("#menu i", ".navbar a");
@@ -23,6 +24,15 @@ document.addEventListener("DOMContentLoaded", (e) => {
   countdown("#countdown", "#img-countdown", new Date("Jan 01, 2022 00:00:00"));
 
   darkMode("#dark-mode i", "#dark");
+
+  responsive(
+    "responsive",
+    "responsive2",
+    "btn-rdj",
+    "video",
+    "childBtn",
+    "childMap"
+  );
 });
 
 document.addEventListener("scroll", () => {

@@ -17,6 +17,9 @@
 .btn-red {
   @apply bg-red-500 hover:bg-red-600;
 }
+.btn-green {
+  @apply bg-green-600 hover:bg-green-700;
+}
 .btn-disable {
   @apply bg-gray-400;
 }

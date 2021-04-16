@@ -621,6 +621,9 @@ video {
 .flex {
 	display: flex;
 }
+.block {
+	display: block;
+}
 .hidden {
 	display: none;
 }
@@ -747,6 +750,14 @@ video {
 .btn-red:hover {
 	--tw-bg-opacity: 1;
 	background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
+}
+.btn-green {
+	--tw-bg-opacity: 1;
+	background-color: rgba(5, 150, 105, var(--tw-bg-opacity));
+}
+.btn-green:hover {
+	--tw-bg-opacity: 1;
+	background-color: rgba(4, 120, 87, var(--tw-bg-opacity));
 }
 .btn-disable {
 	--tw-bg-opacity: 1;
