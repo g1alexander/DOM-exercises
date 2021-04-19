@@ -63,3 +63,9 @@
 - otra vez ejecute una funcion con 2 elementos en el **index.js** en vez de separarlos como lo hizo el profe
 - los codigos embebidos de HTML los paso como parametros
 - Hice el ejercicio muy bien :) (me gusto mucho la clase)
+
+### 9. Noveno ejercicio - Responsive tester
+
+- me falto validar un poco mas de los inputs del HTML (type="url")
+- otra forma de saber quien ha desencadenado un evento es atraves de **e.target === id** (aleternativa a **e.target.matches(id)**)
+- atreves del id del form puedes llamar a cualquier input que contengan el form
