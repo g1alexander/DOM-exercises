@@ -69,3 +69,11 @@
 - me falto validar un poco mas de los inputs del HTML (type="url")
 - otra forma de saber quien ha desencadenado un evento es atraves de **e.target === id** (aleternativa a **e.target.matches(id)**)
 - atreves del id del form puedes llamar a cualquier input que contengan el form
+
+### 10. User agent
+
+- esta tecnica nos sirve mucho para tener un control sobre que dispositivo esta usando el usuario
+- nos funciona principalmente para el responsive design
+- en el periodo el 2012 a 2016 aprox las empresas utilizaban un metodo el cual consistia en tener varios frontend de su sitio y por medio del user agent hacia que dependiendo en que dispositivo este asi mismo rediriguir al usuario a uno o otro
+- Nota: para los visitantes en dispositivos moviles se usaba un subdominio **m.\*com**
+- en **recursos** esta una pagina donde se puede ver la historia de distintos sitios web

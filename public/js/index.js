@@ -6,6 +6,7 @@ import scrollArrow from "./scroll.js";
 import darkMode from "./dark_mode.js";
 import responsive from "./responsive.js";
 import responsiveTester from "./responsive_tester.js";
+import userAgent from "./user_agent.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   menuBurger("#menu i", ".navbar a");
@@ -36,6 +37,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
   );
 
   responsiveTester("#form-tester", "url", "width", "height", "#closed");
+
+  userAgent("user-agent");
 });
 
 document.addEventListener("scroll", () => {
