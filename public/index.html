@@ -36,7 +36,9 @@
           <a href="#seccion4" class="link-menu w-full text-center"
             >Responsive Design JS</a
           >
-          <a href="#seccion5" class="link-menu w-full text-center">Seccion 5</a>
+          <a href="#seccion5" class="link-menu w-full text-center"
+            >Responsive Tester</a
+          >
         </div>
       </nav>
       <div class="z-50 fixed bottom-11 left-11">
@@ -122,7 +124,7 @@
           </div>
         </section>
 
-        <!--  -->
+        <!-- Responsive Design JS -->
         <section id="seccion4" class="h-screen">
           <h2 class="title">Responsive Design JS</h2>
 
@@ -136,9 +138,46 @@
           </template>
         </section>
 
-        <!--  -->
+        <!-- Responsive Tester -->
         <section id="seccion5" class="h-screen">
-          <h2 class="title">seccion 5</h2>
+          <h2 class="title">Responsive Tester</h2>
+          <form
+            action="post"
+            id="form-tester"
+            class="w-full max-w-2xl flex flex-col justify-center items-center mx-auto"
+          >
+            <input
+              class="w-10/12 p-2 m-2 dark:bg-gray-700 border-gray-600 rounded focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent"
+              type="text"
+              name="url"
+              id="url"
+              placeholder="url del sitio web"
+            />
+            <input
+              class="w-10/12 p-2 m-2 dark:bg-gray-700 border-gray-600 rounded focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent"
+              type="number"
+              name="height"
+              id="height"
+              placeholder="altura"
+            />
+            <input
+              class="w-10/12 p-2 m-2 dark:bg-gray-700 border-gray-600 rounded focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent"
+              type="number"
+              name="width"
+              id="width"
+              placeholder="anchura"
+            />
+            <div>
+              <span id="closed" class="text-red-600 m-2 p-2 cursor-pointer"
+                >Cerrar</span
+              >
+              <input
+                class="btn btn-blue cursor-pointer"
+                type="submit"
+                value="Abrir sitio"
+              />
+            </div>
+          </form>
         </section>
       </main>
     </div>

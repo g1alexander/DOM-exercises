@@ -5,6 +5,7 @@ import countdown from "./countdown.js";
 import scrollArrow from "./scroll.js";
 import darkMode from "./dark_mode.js";
 import responsive from "./responsive.js";
+import responsiveTester from "./responsive_tester.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   menuBurger("#menu i", ".navbar a");
@@ -33,6 +34,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
     "childBtn",
     "childMap"
   );
+
+  responsiveTester("#form-tester", "url", "width", "height", "#closed");
 });
 
 document.addEventListener("scroll", () => {

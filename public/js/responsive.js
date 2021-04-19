@@ -17,15 +17,15 @@ export default function responsive(
     if (x.matches) {
       // If media query matches
       templete2.querySelector("article").innerHTML = `<iframe
-                width="560"
-                height="315"
+                width="460"
+                height="215"
                 class="block mx-auto"
                 src="https://www.youtube.com/embed/2SetvwBV-SU"
                 allowfullscreen
               ></iframe>
               <iframe
-                width="560"
-                height="315"
+                width="460"
+                height="215"
                 class="block mx-auto"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15956.051175151542!2d-76.652822!3d1.1513525!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe6a7d3eaf58e0c78!2sParque%20General%20Santander!5e0!3m2!1ses-419!2sco!4v1618577326766!5m2!1ses-419!2sco"
                 allowfullscreen
