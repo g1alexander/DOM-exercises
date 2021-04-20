@@ -7,6 +7,7 @@ import darkMode from "./dark_mode.js";
 import responsive from "./responsive.js";
 import responsiveTester from "./responsive_tester.js";
 import userAgent from "./user_agent.js";
+import statusRed from "./status_red.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   menuBurger("#menu i", ".navbar a");
@@ -39,6 +40,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
   responsiveTester("#form-tester", "url", "width", "height", "#closed");
 
   userAgent("user-agent");
+
+  statusRed("status");
 });
 
 document.addEventListener("scroll", () => {
