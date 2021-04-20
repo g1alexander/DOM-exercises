@@ -77,3 +77,11 @@
 - en el periodo el 2012 a 2016 aprox las empresas utilizaban un metodo el cual consistia en tener varios frontend de su sitio y por medio del user agent hacia que dependiendo en que dispositivo este asi mismo rediriguir al usuario a uno o otro
 - Nota: para los visitantes en dispositivos moviles se usaba un subdominio **m.\*com**
 - en **recursos** esta una pagina donde se puede ver la historia de distintos sitios web
+
+### 11. ejercicio once - desteccion del estado de red
+
+- la funcion no necesita ejecutarse a la carga del documento, yo lo puse :c
+- **tip** para simular la desconexion a internet en la parte de aplicacion de la consola "servi worker" esta la op ion de poner offline la pantalla, pero, hay que tener cuidado de no recargar la pagina porque te apareceria el juego del dinosario de google
+- el profe creo el elemento desde js volviendolo dinamico, yo lo puse en el html
+- nota: la condicion del **n.online** la puse mal, debi ponerla en una sola funcion y esa pasarle esa funcion a los eventos w.addEvent...
+- tanto el online como offline se quita el mensaje despues de 2seg
