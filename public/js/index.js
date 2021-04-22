@@ -8,6 +8,7 @@ import responsive from "./responsive.js";
 import responsiveTester from "./responsive_tester.js";
 import userAgent from "./user_agent.js";
 import statusRed from "./status_red.js";
+import cam from "./video_cam.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   menuBurger("#menu i", ".navbar a");
@@ -42,6 +43,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
   userAgent("user-agent");
 
   statusRed("status");
+
+  cam("cam");
 });
 
 document.addEventListener("scroll", () => {
