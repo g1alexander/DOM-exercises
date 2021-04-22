@@ -85,3 +85,8 @@
 - el profe creo el elemento desde js volviendolo dinamico, yo lo puse en el html
 - nota: la condicion del **n.online** la puse mal, debi ponerla en una sola funcion y esa pasarle esa funcion a los eventos w.addEvent...
 - tanto el online como offline se quita el mensaje despues de 2seg
+
+### 12. ejercicio 12 - deteccion de camara
+
+- me falto añadir el mensaje de el error en la pantalla del navegador
+- lo hice muy bien :)
