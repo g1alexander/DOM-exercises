@@ -90,3 +90,9 @@
 
 - me falto añadir el mensaje de el error en la pantalla del navegador
 - lo hice muy bien :)
+
+### 13. ejercicio 13 - geolocalizacion
+
+- me falto añadir el mensaje de el error en la pantalla del navegador - mmm
+- al metodo **getCurrentPosition()** se le pueden poner mas parametros, exactamente 3, el primero es mensaje de exito, segundo error, y el tercero son las opciones (**{}**), puedes poner tiempo de ejecucion, la presicion, etc...
+- me falto poner el zoom de google maps en el enlace

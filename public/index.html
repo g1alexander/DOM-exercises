@@ -29,7 +29,7 @@
       <!-- Burger -->
       <nav class="navbar hidden">
         <div
-          class="h-screen bg-black flex flex-col justify-center items-center opacity-80 fixed z-40 w-full"
+          class="overflow-auto h-screen bg-black flex flex-col justify-center items-center opacity-80 fixed z-40 w-full"
         >
           <a href="#seccion1" class="link-menu w-full text-center"
             >Reloj Digital y Alarma Sonora</a
@@ -57,6 +57,9 @@
           >
           <a href="#seccion9" class="link-menu w-full text-center"
             >Deteccion de geolocalizacion</a
+          >
+          <a href="#seccion10" class="link-menu w-full text-center"
+            >filtro de busqueda</a
           >
         </div>
       </nav>
@@ -222,6 +225,76 @@
             <a target="_blank" rel="noopener" class="btn bg-green-600"
               >ir al mapa</a
             >
+          </div>
+        </section>
+
+        <!-- filtro de busqueda -->
+        <section id="seccion10" class="h-screen container mx-auto">
+          <h2 class="title">filtro de busqueda</h2>
+          <form
+            action="post"
+            id="form-filter"
+            class="w-full max-w-2xl flex flex-col justify-center items-center mx-auto mb-4"
+          >
+            <input
+              class="w-10/12 p-2 m-2 dark:bg-gray-700 border-gray-600 rounded focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent"
+              type="text"
+              name="filter"
+              id="filter"
+              placeholder="buscar"
+            />
+          </form>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
+            <figure class="bg-gray-100">
+              <img
+                class="w-full"
+                src="https://placeimg.com/400/400/tech"
+                alt="tech"
+              />
+              <figcaption class="p-5 text-gray-800 text-center">
+                tech
+              </figcaption>
+            </figure>
+            <figure class="bg-gray-100">
+              <img
+                class="w-full"
+                src="https://placeimg.com/400/400/animals"
+                alt="animals"
+              />
+              <figcaption class="p-5 text-gray-800 text-center">
+                animals
+              </figcaption>
+            </figure>
+            <figure class="bg-gray-100">
+              <img
+                class="w-full"
+                src="https://placeimg.com/400/400/people"
+                alt="people"
+              />
+              <figcaption class="p-5 text-gray-800 text-center">
+                people
+              </figcaption>
+            </figure>
+            <figure class="bg-gray-100">
+              <img
+                class="w-full"
+                src="https://placeimg.com/400/400/arch"
+                alt="arch"
+              />
+              <figcaption class="p-5 text-gray-800 text-center">
+                arch
+              </figcaption>
+            </figure>
+            <figure class="bg-gray-100">
+              <img
+                class="w-full"
+                src="https://placeimg.com/400/400/nature"
+                alt="nature"
+              />
+              <figcaption class="p-5 text-gray-800 text-center">
+                nature
+              </figcaption>
+            </figure>
           </div>
         </section>
       </main>
