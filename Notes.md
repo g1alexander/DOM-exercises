@@ -53,10 +53,14 @@
 
 - el profe hizo el cambio de tema con **data-attribute** en el HTML
 
+---
+
 ### 7. Septimo ejercicio - localStorage
 
 - me falto que cuando cambie el tema se guarde en localStorage (tecnicamente si lo use, pero, solo que valide si es el navegador esta light o dark)
 - Nota: cuando el localStorage esta vacio es **null**
+
+---
 
 ### 8. Octavo ejercicio - Responsive design JS
 
@@ -64,11 +68,15 @@
 - los codigos embebidos de HTML los paso como parametros
 - Hice el ejercicio muy bien :) (me gusto mucho la clase)
 
+---
+
 ### 9. Noveno ejercicio - Responsive tester
 
 - me falto validar un poco mas de los inputs del HTML (type="url")
 - otra forma de saber quien ha desencadenado un evento es atraves de **e.target === id** (aleternativa a **e.target.matches(id)**)
 - atreves del id del form puedes llamar a cualquier input que contengan el form
+
+---
 
 ### 10. User agent
 
@@ -78,6 +86,8 @@
 - Nota: para los visitantes en dispositivos moviles se usaba un subdominio **m.\*com**
 - en **recursos** esta una pagina donde se puede ver la historia de distintos sitios web
 
+---
+
 ### 11. ejercicio once - desteccion del estado de red
 
 - la funcion no necesita ejecutarse a la carga del documento, yo lo puse :c
@@ -86,13 +96,30 @@
 - nota: la condicion del **n.online** la puse mal, debi ponerla en una sola funcion y esa pasarle esa funcion a los eventos w.addEvent...
 - tanto el online como offline se quita el mensaje despues de 2seg
 
+---
+
 ### 12. ejercicio 12 - deteccion de camara
 
 - me falto añadir el mensaje de el error en la pantalla del navegador
 - lo hice muy bien :)
+
+---
 
 ### 13. ejercicio 13 - geolocalizacion
 
 - me falto añadir el mensaje de el error en la pantalla del navegador - mmm
 - al metodo **getCurrentPosition()** se le pueden poner mas parametros, exactamente 3, el primero es mensaje de exito, segundo error, y el tercero son las opciones (**{}**), puedes poner tiempo de ejecucion, la presicion, etc...
 - me falto poner el zoom de google maps en el enlace
+
+---
+
+### 14. ejercicio 14 - filtro de busqueda
+
+- no necesitaba ingresar el selector que agrupa todas las tarjetas, mas bien era el selector individual en comun de cada tarjeta
+- el evento que manejo el profe fue el **keyup** no le veo diferencia con el que use
+- una cosa que no entendi fue que usara el metedo dentro el **DOMContentLoaded**
+- me pude ahorrar la variable **string** que cree para agrupar las letras, el atributo era **e.target.value**
+- me falto convertir a minusculas!!! pense lo habia puesto
+- me falta optimizar, si bien funciona no es muy recomendable poner dos **for**
+
+---
