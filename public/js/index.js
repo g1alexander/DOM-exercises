@@ -10,6 +10,7 @@ import userAgent from "./user_agent.js";
 import statusRed from "./status_red.js";
 import cam from "./video_cam.js";
 import location from "./location.js";
+import filter from "./filter.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   menuBurger("#menu i", ".navbar a");
@@ -53,3 +54,5 @@ document.addEventListener("DOMContentLoaded", (e) => {
 document.addEventListener("scroll", () => {
   scrollArrow("scroll");
 });
+
+filter("#figures", "#filter");
