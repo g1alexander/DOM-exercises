@@ -119,7 +119,16 @@
 - el evento que manejo el profe fue el **keyup** no le veo diferencia con el que use
 - una cosa que no entendi fue que usara el metedo dentro el **DOMContentLoaded**
 - me pude ahorrar la variable **string** que cree para agrupar las letras, el atributo era **e.target.value**
-- me falto convertir a minusculas!!! pense lo habia puesto
+- me falto convertir a minusculas!!! pense lo habia puesto`
 - me falta optimizar, si bien funciona no es muy recomendable poner dos **for**
+
+---
+
+### 15. ejercicio 15 - sorteo digital
+
+- los lenguajes debia ponerlos en el html no en un array en javascript
+- en el numero aletorio puse **Math.random() \* (10 - 0) + 0** la multiplicacion estatica me la ahorrar con **Math.random() \* arr.length** para que quede dinamica
+- el foreach me lo pude ahorrar, ya que la variable **aletorio** tiene la posicion del ganador, entonces solo era poner array[aletorio]
+- NOTA: para extraer el contenido de un **nodelist** es con **variable.textContent**
 
 ---

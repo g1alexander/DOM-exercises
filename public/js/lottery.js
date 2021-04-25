@@ -27,3 +27,13 @@ export default function lottery(sorteo, $list) {
     }
   });
 }
+
+/* funcion para usar en cualquier sitio o red social
+
+const getWinnerComment = selector =>{
+  const $players = document.querySelectorAll(selector),
+  random = Math.floor(Math.random() * $players.length),
+  winner = $players[random];
+
+  return `El ganador es: ${winner.textContent}`
+} */
