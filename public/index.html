@@ -29,7 +29,7 @@
       <!-- Burger -->
       <nav class="navbar hidden">
         <div
-          class="overflow-auto h-screen bg-black flex flex-col justify-center items-center opacity-80 fixed z-40 w-full"
+          class="overflow-auto h-screen bg-black flex flex-col py-10 justify-center items-center opacity-80 fixed z-40 w-full"
         >
           <a href="#seccion1" class="link-menu w-full text-center"
             >Reloj Digital y Alarma Sonora</a
@@ -60,6 +60,9 @@
           >
           <a href="#seccion10" class="link-menu w-full text-center"
             >filtro de busqueda</a
+          >
+          <a href="#seccion11" class="link-menu w-full text-center"
+            >Sorteo digital</a
           >
         </div>
       </nav>
@@ -229,7 +232,7 @@
         </section>
 
         <!-- filtro de busqueda -->
-        <section id="seccion10" class="h-screen container mx-auto">
+        <section id="seccion10" class="auto container mx-auto">
           <h2 class="title">filtro de busqueda</h2>
           <form
             action="post"
@@ -251,7 +254,7 @@
             <figure class="bg-gray-100">
               <img
                 class="w-full"
-                src="https://placeimg.com/400/400/tech"
+                src="https://placeimg.com/200/200/tech"
                 alt="tech"
               />
               <figcaption class="p-5 text-gray-800 text-center">
@@ -261,7 +264,7 @@
             <figure class="bg-gray-100">
               <img
                 class="w-full"
-                src="https://placeimg.com/400/400/animals"
+                src="https://placeimg.com/200/200/animals"
                 alt="animals"
               />
               <figcaption class="p-5 text-gray-800 text-center">
@@ -271,7 +274,7 @@
             <figure class="bg-gray-100">
               <img
                 class="w-full"
-                src="https://placeimg.com/400/400/people"
+                src="https://placeimg.com/200/200/people"
                 alt="people"
               />
               <figcaption class="p-5 text-gray-800 text-center">
@@ -281,7 +284,7 @@
             <figure class="bg-gray-100">
               <img
                 class="w-full"
-                src="https://placeimg.com/400/400/arch"
+                src="https://placeimg.com/200/200/arch"
                 alt="arch"
               />
               <figcaption class="p-5 text-gray-800 text-center">
@@ -291,13 +294,22 @@
             <figure class="bg-gray-100">
               <img
                 class="w-full"
-                src="https://placeimg.com/400/400/nature"
+                src="https://placeimg.com/200/200/nature"
                 alt="nature"
               />
               <figcaption class="p-5 text-gray-800 text-center">
                 nature
               </figcaption>
             </figure>
+          </div>
+        </section>
+
+        <!-- sorteo digital -->
+        <section id="seccion11" class="h-screen">
+          <h2 class="title">Sorteo digital</h2>
+          <div class="text-center">
+            <ul id="lenguajes" class="pb-3"></ul>
+            <button id="sorteo" class="btn btn-blue">Eligir ganador</button>
           </div>
         </section>
       </main>

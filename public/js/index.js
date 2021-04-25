@@ -11,6 +11,7 @@ import statusRed from "./status_red.js";
 import cam from "./video_cam.js";
 import location from "./location.js";
 import filter from "./filter.js";
+import lottery from "./lottery.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   menuBurger("#menu i", ".navbar a");
@@ -49,6 +50,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
   cam("cam");
 
   location("location");
+
+  lottery("#sorteo", "lenguajes");
 });
 
 document.addEventListener("scroll", () => {
