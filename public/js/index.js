@@ -12,6 +12,7 @@ import cam from "./video_cam.js";
 import location from "./location.js";
 import filter from "./filter.js";
 import lottery from "./lottery.js";
+import carousel from "./carousel.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   menuBurger("#menu i", ".navbar a");
@@ -52,6 +53,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
   location("location");
 
   lottery("#sorteo", "lenguajes");
+
+  carousel("retroceder", "imagenes", "avanzar");
 });
 
 document.addEventListener("scroll", () => {
