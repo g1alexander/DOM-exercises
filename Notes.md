@@ -132,3 +132,24 @@
 - NOTA: para extraer el contenido de un **nodelist** es con **variable.textContent**
 
 ---
+
+### 16. ejercicio 16 - responsive carousel
+
+- me falto animaciones
+- Nota: en los carousel hay algo a tener en cuenta en las imagenes, y es que dependiendo del alto y ancho de la imagen, esta se puede deformar. <br>
+  Para solucionar esto se puede usar el siguiente codigo **css** <br>
+  esto hara que las imagenes primero hereden el alto y ancho del contenedor padre, luego que la imagen se adapte con respecto al ancho y por ultimo se ubica la imagen centrada en el ancho y position 0 en la altura
+
+```css
+ {
+  height: inherit;
+  width: inherit;
+  object-fit: cover;
+  object-position: 50% 0%;
+}
+```
+
+- el profe puso la ubicacion de las imagenes dentro de html, yo lo puse en javascript
+- TAREA: poner un auto play al carousel
+
+---
