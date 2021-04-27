@@ -153,3 +153,20 @@
 - TAREA: poner un auto play al carousel
 
 ---
+
+### 17. ejercicio 17 - scrollspy
+
+- el panel que contiene el menu lo duplique :) jajajaj, tenia que convertirlo en movil y deskop ... F
+- me falto quitar un poco de padding y font-size al menu deskop
+- el profe no le manda parametros a la funcion, la razon es que los manejo con data-attribute y yo lo hice con clases
+- me pude ahorrar el **for** del menu atrayendome el solo el **d.querySelector()** que tenga el href igual al id, recuerda que los **href** del menu comparten el mismo nombre de los **id** de las **section**
+- la programacion la hice muy bien !! :)
+- la propiedad **threshold** que maneja el limite de las visualizaciones se puede manejar tambien como arreglo
+
+```javascript
+{
+  threshold: [0.5, 0.75]; //min y max :)
+}
+```
+
+---
