@@ -5,6 +5,10 @@
 .title {
   @apply text-center font-bold text-xl py-3;
 }
+.active {
+  @apply bg-yellow-300 text-black py-6 px-6;
+}
+
 .link-menu {
   @apply text-white py-6 px-6 hover:bg-yellow-300 hover:text-black;
 }

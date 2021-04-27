@@ -13,8 +13,11 @@ import location from "./location.js";
 import filter from "./filter.js";
 import lottery from "./lottery.js";
 import carousel from "./carousel.js";
+import scrollspy from "./scrollspy.js";
 
-document.addEventListener("DOMContentLoaded", (e) => {
+const d = document;
+
+d.addEventListener("DOMContentLoaded", (e) => {
   menuBurger("#menu i", ".navbar a");
   relojAlarma(
     "#templete-reloj",
@@ -55,9 +58,11 @@ document.addEventListener("DOMContentLoaded", (e) => {
   lottery("#sorteo", "lenguajes");
 
   carousel("retroceder", "imagenes", "avanzar");
+
+  scrollspy(".scrollspy", ".menu-aside");
 });
 
-document.addEventListener("scroll", () => {
+d.addEventListener("scroll", () => {
   scrollArrow("scroll");
 });
 
