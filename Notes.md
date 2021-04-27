@@ -170,3 +170,11 @@
 ```
 
 ---
+
+### 18. ejercicio 18 - video inteligente
+
+- el profe volvio a usar **data-attribute** para resolver el ejercicio
+- NOTA: me falta practicar mas con los **data-attribute**
+- el evento de visilibily change hay que ponerlo dentro de la callback entrie, la razon es que si tengo mas de un video hace que la referencia del video especifico que quiera pausar este dentro de la propiedad **entry**
+
+---
