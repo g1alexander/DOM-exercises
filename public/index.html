@@ -25,13 +25,13 @@
       class="bg-green-500 bg-red-500 fixed z-50 text-center p-4 text-white text-2xl w-full"
     ></h1>
 
-    <div class="font-mono relative">
+    <main class="font-mono relative">
       <!-- Burger -->
       <nav class="navbar hidden">
         <div
-          class="overflow-auto h-screen bg-black flex flex-col py-10 justify-center items-center opacity-80 fixed z-40 w-full"
+          class="h-screen overflow-auto bg-black flex flex-col pb-5 justify-center items-center opacity-80 fixed z-40 w-full"
         >
-          <a href="#seccion1" class="link-menu w-full text-center"
+          <a href="#seccion1" class="link-menu w-full mt-60 text-center"
             >Reloj Digital y Alarma Sonora</a
           >
           <a href="#seccion2" class="link-menu w-full text-center"
@@ -69,274 +69,325 @@
           >
         </div>
       </nav>
-      <!-- dark mode -->
-      <div class="z-50 fixed bottom-11 left-11">
+      <!-- dark mode, menu burger and scroll -->
+      <div>
         <button
           id="dark-mode"
-          class="text-yellow-500 hover:text-gray-500 text-3xl"
+          class="text-yellow-500 z-50 fixed bottom-11 left-9 hover:text-gray-500 text-3xl"
         >
           <i id="dark" class="fas px-2 pt-1"></i>
         </button>
-      </div>
-      <!-- menu burger and scroll -->
-      <div class="z-50 fixed bottom-11 right-11">
+
         <button
           id="scroll"
-          class="hidden text-yellow-500 hover:text-gray-500 text-3xl"
+          class="hidden text-yellow-500 z-50 fixed bottom-11 xsm:right-20 md:left-20 hover:text-gray-500 text-3xl"
         >
           <i class="fas fa-arrow-up px-2 pt-1"></i>
         </button>
-        <button id="menu" class="text-yellow-500 hover:text-gray-500 text-3xl">
+        <button
+          id="menu"
+          class="md:hidden text-yellow-500 z-50 fixed bottom-11 right-9 hover:text-gray-500 text-3xl"
+        >
           <i class="fas fa-bars px-2 pt-1"></i>
         </button>
       </div>
+      <!--  -->
 
-      <!-- header -->
-      <header class="bg-yellow-300 py-6">
-        <h1 class="dark:text-gray-800 text-center font-bold text-3xl">
-          Ejercicios del DOM
-        </h1>
-      </header>
+      <section class="w-full flex">
+        <section class="xsm:w-full md:w-5/6">
+          <!-- header -->
+          <header class="bg-yellow-300 py-6">
+            <h1 class="dark:text-gray-800 text-center font-bold text-3xl">
+              Ejercicios del DOM
+            </h1>
+          </header>
 
-      <main>
-        <!-- Reloj Digital y Alarma Sonora -->
-        <section id="seccion1" class="h-screen">
-          <h2 class="title">Reloj Digital y Alarma Sonora</h2>
-          <div id="reloj">
-            <h2 id="content-reloj" class="title"></h2>
-            <audio id="alarm" src="asset/alarma.mp3" preload="none"></audio>
-          </div>
-          <template id="templete-reloj">
-            <h2 id="content-reloj" class="title"></h2>
-          </template>
-          <div class="text-center">
-            <button id="start-reloj" class="btn btn-blue mb-4">
-              Iniciar Reloj
-            </button>
-            <button id="stop-reloj" class="btn btn-disable mb-4" disabled>
-              Detener Reloj
-            </button>
-            <button id="start-alarm" class="btn btn-blue">
-              Iniciar Alarma
-            </button>
-            <button id="stop-alarm" class="btn btn-disable">
-              Detener Alarma
-            </button>
-          </div>
-        </section>
+          <!-- Reloj Digital y Alarma Sonora -->
+          <section id="seccion1" class="h-screen">
+            <h2 class="title">Reloj Digital y Alarma Sonora</h2>
+            <div id="reloj">
+              <h2 id="content-reloj" class="title"></h2>
+              <audio id="alarm" src="asset/alarma.mp3" preload="none"></audio>
+            </div>
+            <template id="templete-reloj">
+              <h2 id="content-reloj" class="title"></h2>
+            </template>
+            <div class="text-center">
+              <button id="start-reloj" class="btn btn-blue mb-4">
+                Iniciar Reloj
+              </button>
+              <button id="stop-reloj" class="btn btn-disable mb-4" disabled>
+                Detener Reloj
+              </button>
+              <button id="start-alarm" class="btn btn-blue">
+                Iniciar Alarma
+              </button>
+              <button id="stop-alarm" class="btn btn-disable">
+                Detener Alarma
+              </button>
+            </div>
+          </section>
 
-        <!-- Eventos de teclado -->
-        <section id="seccion2" class="h-screen">
-          <h2 class="title">Eventos de teclado</h2>
-          <span class="flex justify-center pb-5"
-            >Presiona click en el fondo y mueve el objeto con W, A, S, D
-          </span>
-          <canvas
-            id="canvas"
-            class="bg-gray-900 container mx-auto w-full h-96"
-          ></canvas>
-        </section>
+          <!-- Eventos de teclado -->
+          <section id="seccion2" class="h-screen">
+            <h2 class="title">Eventos de teclado</h2>
+            <span class="flex justify-center pb-5"
+              >Presiona click en el fondo y mueve el objeto con W, A, S, D
+            </span>
+            <canvas
+              id="canvas"
+              class="bg-gray-900 container mx-auto w-full h-96"
+            ></canvas>
+          </section>
 
-        <!-- conteo regresivo -->
-        <section id="seccion3" class="h-screen">
-          <h2 class="title">Conteo Regresivo (Countdown)</h2>
-          <h3 id="countdown" class="title"></h3>
-          <div class="container mx-auto h-5/6">
-            <img
-              id="img-countdown"
-              src="https://previews.123rf.com/images/meineurlaubswelt/meineurlaubswelt1711/meineurlaubswelt171100121/90390087-feliz-a%C3%B1o-nuevo-2022.jpg"
-              alt="feliz anio"
-              class="w-full h-5/6 hidden"
-            />
-          </div>
-        </section>
-
-        <!-- Responsive Design JS -->
-        <section id="seccion4" class="h-screen">
-          <h2 class="title">Responsive Design JS</h2>
-
-          <div id="btn-rdj" class="text-center py-6"></div>
-          <article id="video"></article>
-          <template id="responsive">
-            <div id="childBtn"></div>
-          </template>
-          <template id="responsive2">
-            <article id="childMap"></article>
-          </template>
-        </section>
-
-        <!-- Responsive Tester -->
-        <section id="seccion5" class="h-screen">
-          <h2 class="title">Responsive Tester</h2>
-          <form
-            action="post"
-            id="form-tester"
-            class="w-full max-w-2xl flex flex-col justify-center items-center mx-auto"
-          >
-            <input
-              class="w-10/12 p-2 m-2 dark:bg-gray-700 border-gray-600 rounded focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent"
-              type="text"
-              name="url"
-              id="url"
-              placeholder="url del sitio web"
-            />
-            <input
-              class="w-10/12 p-2 m-2 dark:bg-gray-700 border-gray-600 rounded focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent"
-              type="number"
-              name="height"
-              id="height"
-              placeholder="altura"
-            />
-            <input
-              class="w-10/12 p-2 m-2 dark:bg-gray-700 border-gray-600 rounded focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent"
-              type="number"
-              name="width"
-              id="width"
-              placeholder="anchura"
-            />
-            <div>
-              <span id="closed" class="text-red-600 m-2 p-2 cursor-pointer"
-                >Cerrar</span
-              >
-              <input
-                class="btn btn-blue cursor-pointer"
-                type="submit"
-                value="Abrir sitio"
+          <!-- conteo regresivo -->
+          <section id="seccion3" class="h-screen">
+            <h2 class="title">Conteo Regresivo (Countdown)</h2>
+            <h3 id="countdown" class="title"></h3>
+            <div class="container mx-auto h-5/6">
+              <img
+                id="img-countdown"
+                src="https://previews.123rf.com/images/meineurlaubswelt/meineurlaubswelt1711/meineurlaubswelt171100121/90390087-feliz-a%C3%B1o-nuevo-2022.jpg"
+                alt="feliz anio"
+                class="w-full h-5/6 hidden"
               />
             </div>
-          </form>
-        </section>
+          </section>
 
-        <!-- User Agent -->
-        <section id="seccion6" class="h-screen">
-          <h2 class="title">User Agent</h2>
-          <div id="user-agent" class="text-center py-4"></div>
-        </section>
+          <!-- Responsive Design JS -->
+          <section id="seccion4" class="h-screen">
+            <h2 class="title">Responsive Design JS</h2>
 
-        <!-- estado de red -->
-        <section id="seccion7" class="h-screen">
-          <h2 class="title">Estado de red</h2>
-        </section>
+            <div id="btn-rdj" class="text-center py-6"></div>
+            <article id="video"></article>
+            <template id="responsive">
+              <div id="childBtn"></div>
+            </template>
+            <template id="responsive2">
+              <article id="childMap"></article>
+            </template>
+          </section>
 
-        <!-- deteccion de video -->
-        <section id="seccion8" class="h-screen">
-          <h2 class="title">Deteccion de video</h2>
-          <video id="cam" class="mx-auto" playsinline autoplay></video>
-        </section>
-
-        <!-- geolocalizacion -->
-        <section id="seccion9" class="h-screen">
-          <h2 class="title">Deteccion de geolocalizacion</h2>
-          <div id="location" class="text-center">
-            <a target="_blank" rel="noopener" class="btn bg-green-600"
-              >ir al mapa</a
+          <!-- Responsive Tester -->
+          <section id="seccion5" class="h-screen">
+            <h2 class="title">Responsive Tester</h2>
+            <form
+              action="post"
+              id="form-tester"
+              class="w-full max-w-2xl flex flex-col justify-center items-center mx-auto"
             >
-          </div>
+              <input
+                class="w-10/12 p-2 m-2 dark:bg-gray-700 border-gray-600 rounded focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent"
+                type="text"
+                name="url"
+                id="url"
+                placeholder="url del sitio web"
+              />
+              <input
+                class="w-10/12 p-2 m-2 dark:bg-gray-700 border-gray-600 rounded focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent"
+                type="number"
+                name="height"
+                id="height"
+                placeholder="altura"
+              />
+              <input
+                class="w-10/12 p-2 m-2 dark:bg-gray-700 border-gray-600 rounded focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent"
+                type="number"
+                name="width"
+                id="width"
+                placeholder="anchura"
+              />
+              <div>
+                <span id="closed" class="text-red-600 m-2 p-2 cursor-pointer"
+                  >Cerrar</span
+                >
+                <input
+                  class="btn btn-blue cursor-pointer"
+                  type="submit"
+                  value="Abrir sitio"
+                />
+              </div>
+            </form>
+          </section>
+
+          <!-- User Agent -->
+          <section id="seccion6" class="h-screen">
+            <h2 class="title">User Agent</h2>
+            <div id="user-agent" class="text-center py-4"></div>
+          </section>
+
+          <!-- estado de red -->
+          <section id="seccion7" class="h-screen">
+            <h2 class="title">Estado de red</h2>
+          </section>
+
+          <!-- deteccion de video -->
+          <section id="seccion8" class="h-screen">
+            <h2 class="title">Deteccion de video</h2>
+            <video id="cam" class="mx-auto" playsinline autoplay></video>
+          </section>
+
+          <!-- geolocalizacion -->
+          <section id="seccion9" class="h-screen">
+            <h2 class="title">Deteccion de geolocalizacion</h2>
+            <div id="location" class="text-center">
+              <a target="_blank" rel="noopener" class="btn bg-green-600"
+                >ir al mapa</a
+              >
+            </div>
+          </section>
+
+          <!-- filtro de busqueda -->
+          <section id="seccion10" class="auto container mx-auto">
+            <h2 class="title">filtro de busqueda</h2>
+            <form
+              action="post"
+              id="form-filter"
+              class="w-full max-w-2xl flex flex-col justify-center items-center mx-auto mb-4"
+            >
+              <input
+                class="w-10/12 p-2 m-2 dark:bg-gray-700 border-gray-600 rounded focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent"
+                type="text"
+                name="filter"
+                id="filter"
+                placeholder="buscar"
+              />
+            </form>
+            <div
+              id="figures"
+              class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3"
+            >
+              <figure class="bg-gray-100">
+                <img
+                  class="w-full"
+                  src="https://placeimg.com/200/200/tech"
+                  alt="tech"
+                />
+                <figcaption class="p-5 text-gray-800 text-center">
+                  tech
+                </figcaption>
+              </figure>
+              <figure class="bg-gray-100">
+                <img
+                  class="w-full"
+                  src="https://placeimg.com/200/200/animals"
+                  alt="animals"
+                />
+                <figcaption class="p-5 text-gray-800 text-center">
+                  animals
+                </figcaption>
+              </figure>
+              <figure class="bg-gray-100">
+                <img
+                  class="w-full"
+                  src="https://placeimg.com/200/200/people"
+                  alt="people"
+                />
+                <figcaption class="p-5 text-gray-800 text-center">
+                  people
+                </figcaption>
+              </figure>
+              <figure class="bg-gray-100">
+                <img
+                  class="w-full"
+                  src="https://placeimg.com/200/200/arch"
+                  alt="arch"
+                />
+                <figcaption class="p-5 text-gray-800 text-center">
+                  arch
+                </figcaption>
+              </figure>
+              <figure class="bg-gray-100">
+                <img
+                  class="w-full"
+                  src="https://placeimg.com/200/200/nature"
+                  alt="nature"
+                />
+                <figcaption class="p-5 text-gray-800 text-center">
+                  nature
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <!-- sorteo digital -->
+          <section id="seccion11" class="h-screen">
+            <h2 class="title">Sorteo digital</h2>
+            <div class="text-center">
+              <ul id="lenguajes" class="pb-3"></ul>
+              <button id="sorteo" class="btn btn-blue">Eligir ganador</button>
+            </div>
+          </section>
+
+          <!-- Carousel responsive -->
+          <section id="seccion12" class="h-screen">
+            <h2 class="title">Carousel responsive</h2>
+            <div
+              class="max-w-2xl mx-auto flex h-96 items-center justify-center"
+            >
+              <button
+                id="retroceder"
+                class="text-yellow-500 mr-6 hover:text-gray-500 text-3xl"
+              >
+                <i class="retroceder fas fa-arrow-left px-2 pt-1"></i>
+              </button>
+              <div id="imagenes" class="w-full h-96"></div>
+              <button
+                id="avanzar"
+                class="text-yellow-500 ml-6 hover:text-gray-500 text-3xl"
+              >
+                <i class="avanzar fas fa-arrow-right px-2 pt-1"></i>
+              </button>
+            </div>
+          </section>
         </section>
 
-        <!-- filtro de busqueda -->
-        <section id="seccion10" class="auto container mx-auto">
-          <h2 class="title">filtro de busqueda</h2>
-          <form
-            action="post"
-            id="form-filter"
-            class="w-full max-w-2xl flex flex-col justify-center items-center mx-auto mb-4"
-          >
-            <input
-              class="w-10/12 p-2 m-2 dark:bg-gray-700 border-gray-600 rounded focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent"
-              type="text"
-              name="filter"
-              id="filter"
-              placeholder="buscar"
-            />
-          </form>
+        <aside
+          class="md:w-1/6 xsm:hidden md:inline h-full md:fixed right-0 top-0 overflow-auto"
+        >
           <div
-            id="figures"
-            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3"
+            class="overflow-auto w-full bg-black flex flex-col py-10 justify-center items-center opacity-80"
           >
-            <figure class="bg-gray-100">
-              <img
-                class="w-full"
-                src="https://placeimg.com/200/200/tech"
-                alt="tech"
-              />
-              <figcaption class="p-5 text-gray-800 text-center">
-                tech
-              </figcaption>
-            </figure>
-            <figure class="bg-gray-100">
-              <img
-                class="w-full"
-                src="https://placeimg.com/200/200/animals"
-                alt="animals"
-              />
-              <figcaption class="p-5 text-gray-800 text-center">
-                animals
-              </figcaption>
-            </figure>
-            <figure class="bg-gray-100">
-              <img
-                class="w-full"
-                src="https://placeimg.com/200/200/people"
-                alt="people"
-              />
-              <figcaption class="p-5 text-gray-800 text-center">
-                people
-              </figcaption>
-            </figure>
-            <figure class="bg-gray-100">
-              <img
-                class="w-full"
-                src="https://placeimg.com/200/200/arch"
-                alt="arch"
-              />
-              <figcaption class="p-5 text-gray-800 text-center">
-                arch
-              </figcaption>
-            </figure>
-            <figure class="bg-gray-100">
-              <img
-                class="w-full"
-                src="https://placeimg.com/200/200/nature"
-                alt="nature"
-              />
-              <figcaption class="p-5 text-gray-800 text-center">
-                nature
-              </figcaption>
-            </figure>
-          </div>
-        </section>
-
-        <!-- sorteo digital -->
-        <section id="seccion11" class="h-screen">
-          <h2 class="title">Sorteo digital</h2>
-          <div class="text-center">
-            <ul id="lenguajes" class="pb-3"></ul>
-            <button id="sorteo" class="btn btn-blue">Eligir ganador</button>
-          </div>
-        </section>
-
-        <!-- Carousel responsive -->
-        <section id="seccion12" class="h-screen">
-          <h2 class="title">Carousel responsive</h2>
-          <div class="max-w-2xl mx-auto flex h-96 items-center justify-center">
-            <button
-              id="retroceder"
-              class="text-yellow-500 mr-6 hover:text-gray-500 text-3xl"
+            <a href="#seccion1" class="link-menu w-full text-center"
+              >Reloj Digital y Alarma Sonora</a
             >
-              <i class="retroceder fas fa-arrow-left px-2 pt-1"></i>
-            </button>
-            <div id="imagenes" class="w-full h-96"></div>
-            <button
-              id="avanzar"
-              class="text-yellow-500 ml-6 hover:text-gray-500 text-3xl"
+            <a href="#seccion2" class="link-menu w-full text-center"
+              >Eventos de teclado</a
             >
-              <i class="avanzar fas fa-arrow-right px-2 pt-1"></i>
-            </button>
+            <a href="#seccion3" class="link-menu w-full text-center"
+              >Conteo Regresivo (Countdown)</a
+            >
+            <a href="#seccion4" class="link-menu w-full text-center"
+              >Responsive Design JS</a
+            >
+            <a href="#seccion5" class="link-menu w-full text-center"
+              >Responsive Tester</a
+            >
+            <a href="#seccion6" class="link-menu w-full text-center"
+              >User Agent</a
+            >
+            <a href="#seccion7" class="link-menu w-full text-center"
+              >Estado de red</a
+            >
+            <a href="#seccion8" class="link-menu w-full text-center"
+              >Deteccion de video</a
+            >
+            <a href="#seccion9" class="link-menu w-full text-center"
+              >Deteccion de geolocalizacion</a
+            >
+            <a href="#seccion10" class="link-menu w-full text-center"
+              >filtro de busqueda</a
+            >
+            <a href="#seccion11" class="link-menu w-full text-center"
+              >Sorteo digital</a
+            >
+            <a href="#seccion12" class="link-menu w-full text-center"
+              >Carousel responsive</a
+            >
           </div>
-        </section>
-      </main>
-    </div>
+        </aside>
+      </section>
+    </main>
 
     <script src="js/index.js" type="module"></script>
   </body>
