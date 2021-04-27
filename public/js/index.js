@@ -14,6 +14,7 @@ import filter from "./filter.js";
 import lottery from "./lottery.js";
 import carousel from "./carousel.js";
 import scrollspy from "./scrollspy.js";
+import videoInteligente from "./video_inteligente.js";
 
 const d = document;
 
@@ -60,6 +61,8 @@ d.addEventListener("DOMContentLoaded", (e) => {
   carousel("retroceder", "imagenes", "avanzar");
 
   scrollspy(".scrollspy", ".menu-aside");
+
+  videoInteligente("video-inte");
 });
 
 d.addEventListener("scroll", () => {
