@@ -6,8 +6,8 @@ export default function responsiveTester(form, url, width, height, btnClosed) {
     (height = d.getElementById(height)),
     (width = d.getElementById(width)),
     d.addEventListener("submit", (e) => {
-      e.preventDefault();
       if (e.target.matches(form)) {
+        e.preventDefault();
         if (url.value === "") {
           alert("debes ingresar una url");
         } else {

@@ -178,3 +178,24 @@
 - el evento de visilibily change hay que ponerlo dentro de la callback entrie, la razon es que si tengo mas de un video hace que la referencia del video especifico que quiera pausar este dentro de la propiedad **entry**
 
 ---
+
+### 19. ejercicios 19, 20, 21 - validaciones de formulario
+
+1.  el ejercicio 19 consta solo de validaciones en HTML:
+
+- los campos de tipo **INPUT** traen ciertos atributos importantes los cuales nos permiten ya validar campos solo con HTML eston son:
+  **title**: mensaje que se muestra en error, **pattern**: permite tener expersiones regulares, **required**: campo requerido, ej:
+
+```html
+<input
+  type="text"
+  name="name"
+  placeholder="escribe tu nombre"
+  title="el nombre solo acepta letras y espacios"
+  pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+  required
+/>
+```
+
+- Nota: los campos **textarea** no aceptan el atributo **pattern** y una validacion importante es que solo se debe permitir 255 caracteres, la razon de esto es por el almacenamiento de la base de datos, en **Mysql** los campos solo permiten 255 caractes por defecto (si se requiere mas hay que cambiar de tipo de dato)
+  <br> si en dado caso se quiera poner una expresion regular al **textarea** se podria ocupar un **data-attribute**

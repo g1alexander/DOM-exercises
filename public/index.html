@@ -70,6 +70,9 @@
           <a href="#seccion13" class="link-menu w-full text-center"
             >Video inteligente</a
           >
+          <a href="#seccion14" class="link-menu w-full text-center"
+            >Formulario de contacto</a
+          >
         </div>
       </nav>
       <!-- dark mode, menu burger and scroll -->
@@ -356,6 +359,62 @@
               height="600"
             ></video>
           </section>
+
+          <!-- Formulario de contacto -->
+          <section id="seccion14" class="scrollspy h-screen">
+            <h2 class="title">Formulario de contacto</h2>
+            <form method="post" class="block mx-auto w-10/12">
+              <input
+                type="text"
+                name="nombre"
+                placeholder="escribe tu nombre"
+                title="el nombre solo acepta letras y espacios"
+                pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+                required
+                class="block w-full p-3 m-3 rounded focus:outline-none focus:shadow-outline"
+              />
+              <input
+                type="email"
+                name="correo"
+                placeholder="escribe tu email"
+                title="email incorrecto"
+                pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+                required
+                class="block w-full p-3 m-3 rounded focus:outline-none focus:shadow-outline"
+              />
+              <input
+                type="text"
+                name="asunto"
+                placeholder="escribe tu asunto"
+                title="asunto incorrecto"
+                required
+                class="block w-full p-3 m-3 rounded focus:outline-none focus:shadow-outline"
+              />
+
+              <textarea
+                name="comentarios"
+                cols="50"
+                rows="5"
+                placeholder="escribe tus comentarios"
+                title="Los comentarios solo deben tener max 255 caracteres"
+                data-pattern="^.{1,255}$"
+                required
+                class="block w-full p-3 m-3 rounded focus:outline-none focus:shadow-outline"
+              ></textarea>
+
+              <input
+                type="submit"
+                class="m-3 btn btn-blue w-5/12 cursor-pointer"
+                value="enviar"
+              />
+            </form>
+            <div class="hidden justify-center my-10">
+              <img src="asset/loader.svg" alt="" srcset="" />
+            </div>
+            <div class="hidden text-center">
+              <p class="text-2xl font-bold">Se han enviado los datos</p>
+            </div>
+          </section>
         </section>
 
         <aside
@@ -402,6 +461,9 @@
             >
             <a href="#seccion13" class="menu-aside link-menu w-full text-center"
               >Video inteligente</a
+            >
+            <a href="#seccion14" class="menu-aside link-menu w-full text-center"
+              >Formulario de contacto</a
             >
           </div>
         </aside>
