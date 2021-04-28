@@ -363,7 +363,7 @@
           <!-- Formulario de contacto -->
           <section id="seccion14" class="scrollspy h-screen">
             <h2 class="title">Formulario de contacto</h2>
-            <form method="post" class="block mx-auto w-10/12">
+            <form method="GET" id="form-contact" class="block mx-auto w-10/12">
               <input
                 type="text"
                 name="nombre"
@@ -386,7 +386,7 @@
                 type="text"
                 name="asunto"
                 placeholder="escribe tu asunto"
-                title="asunto incorrecto"
+                title="asunto no puede ir vacio"
                 required
                 class="block w-full p-3 m-3 rounded focus:outline-none focus:shadow-outline"
               />
