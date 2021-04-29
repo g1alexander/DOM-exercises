@@ -363,7 +363,13 @@
           <!-- Formulario de contacto -->
           <section id="seccion14" class="scrollspy h-screen">
             <h2 class="title">Formulario de contacto</h2>
-            <form method="GET" id="form-contact" class="block mx-auto w-10/12">
+            <form
+              target="_blank"
+              action="https://formsubmit.co/alexlds26@gmail.com"
+              method="POST"
+              id="form-contact"
+              class="block mx-auto w-10/12"
+            >
               <input
                 type="text"
                 name="nombre"
@@ -408,10 +414,10 @@
                 value="enviar"
               />
             </form>
-            <div class="hidden justify-center my-10">
+            <div id="loader" class="hidden justify-center my-10">
               <img src="asset/loader.svg" alt="" srcset="" />
             </div>
-            <div class="hidden text-center">
+            <div id="submitOk" class="hidden text-center">
               <p class="text-2xl font-bold">Se han enviado los datos</p>
             </div>
           </section>

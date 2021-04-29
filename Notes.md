@@ -199,3 +199,5 @@
 
 - Nota: los campos **textarea** no aceptan el atributo **pattern** y una validacion importante es que solo se debe permitir 255 caracteres, la razon de esto es por el almacenamiento de la base de datos, en **Mysql** los campos solo permiten 255 caractes por defecto (si se requiere mas hay que cambiar de tipo de dato)
   <br> si en dado caso se quiera poner una expresion regular al **textarea** se podria ocupar un **data-attribute**
+
+- Nota: se puede realizar formularios funcionales solo con lenguajes web sin necesidad de un lenguaje del lado del servidor. Como ya vimos en lo anterior que con HTML, CSS, y JS podemos validar correctamente, para simular el envio de este pordemos usar un servicio externo llamado **https://formsubmit.co/** el cual nos permite enviar los datos del formulario a un correo electronico
