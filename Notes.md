@@ -201,3 +201,9 @@
   <br> si en dado caso se quiera poner una expresion regular al **textarea** se podria ocupar un **data-attribute**
 
 - Nota: se puede realizar formularios funcionales solo con lenguajes web sin necesidad de un lenguaje del lado del servidor. Como ya vimos en lo anterior que con HTML, CSS, y JS podemos validar correctamente, para simular el envio de este pordemos usar un servicio externo llamado **https://formsubmit.co/** el cual nos permite enviar los datos del formulario a un correo electronico
+---
+### 20. ejercicio 20 - narrador de voz
+- me falto poner un placeholder al textarea :)
+- el profe no paso parametro de los selectores en la funcion
+- para detectar las voces no es necesario poner una promesa, como lo hice yo guiado, si no que con el evento que viene en **w.speechSynthesis.addEventListener("voicesChanged")** puedo obtener las voces que detecta el navegador
+---
