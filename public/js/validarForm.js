@@ -35,23 +35,25 @@ export default function validarForm() {
   d.addEventListener("submit", (e) => {
     // e.preventDefault();
 
-    alert("enviando formulario");
+    if (e.target.matches("#form-contact")) {
+      alert("enviando formulario");
 
-    const $loader = d.getElementById("loader"),
-      $submitOk = d.getElementById("submitOk");
+      const $loader = d.getElementById("loader"),
+        $submitOk = d.getElementById("submitOk");
 
-    $loader.classList.remove("hidden");
-    $loader.classList.add("flex");
-
-    setTimeout(() => {
-      $loader.classList.add("hidden");
-      $loader.classList.remove("flex");
-      $submitOk.classList.remove("hidden");
+      $loader.classList.remove("hidden");
+      $loader.classList.add("flex");
 
       setTimeout(() => {
-        $submitOk.classList.add("hidden");
+        $loader.classList.add("hidden");
+        $loader.classList.remove("flex");
+        $submitOk.classList.remove("hidden");
+
+        setTimeout(() => {
+          $submitOk.classList.add("hidden");
+        }, 3000);
       }, 3000);
-    }, 3000);
-    $form.reset();
+      $form.reset();
+    }
   });
 }

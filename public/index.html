@@ -73,6 +73,7 @@
           <a href="#seccion14" class="link-menu w-full text-center"
             >Formulario de contacto</a
           >
+          <a href="#seccion15" class="link-menu w-full text-center">Narrador</a>
         </div>
       </nav>
       <!-- dark mode, menu burger and scroll -->
@@ -421,6 +422,32 @@
               <p class="text-2xl font-bold">Se han enviado los datos</p>
             </div>
           </section>
+
+          <!-- Narrador -->
+          <section id="seccion15" class="scrollspy h-screen">
+            <h2 class="title">Narrador</h2>
+            <form id="form-narrador" class="block mx-auto w-10/12">
+              <label for="narrador" class="block mx-auto"
+                >-- Eligue una voz --</label
+              >
+              <select
+                name="narrador"
+                class="block w-full p-3 m-3 rounded focus:outline-none focus:shadow-outline"
+                id="narrador-lang"
+              ></select>
+              <textarea
+                id="narrador-text"
+                cols="50"
+                rows="5"
+                class="block w-full p-3 m-3 rounded focus:outline-none focus:shadow-outline"
+              ></textarea>
+              <input
+                type="submit"
+                class="m-3 btn btn-blue w-5/12 cursor-pointer"
+                value="Enviar"
+              />
+            </form>
+          </section>
         </section>
 
         <aside
@@ -470,6 +497,9 @@
             >
             <a href="#seccion14" class="menu-aside link-menu w-full text-center"
               >Formulario de contacto</a
+            >
+            <a href="#seccion15" class="menu-aside link-menu w-full text-center"
+              >Narrador</a
             >
           </div>
         </aside>

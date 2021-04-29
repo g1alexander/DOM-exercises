@@ -16,6 +16,7 @@ import carousel from "./carousel.js";
 import scrollspy from "./scrollspy.js";
 import videoInteligente from "./video_inteligente.js";
 import validarForm from "./validarForm.js";
+import narrador from "./narrador.js";
 
 const d = document;
 
@@ -66,6 +67,8 @@ d.addEventListener("DOMContentLoaded", (e) => {
   videoInteligente("video-inte");
 
   validarForm();
+
+  narrador("#form-narrador", "narrador-lang", "narrador-text");
 });
 
 d.addEventListener("scroll", () => {
